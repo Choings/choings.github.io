@@ -100,3 +100,52 @@ button:focus {
     border-radius: 4px;
 }
 
+/* Home */
+
+#home{
+
+    background-color: gray;
+    color: var(--color-text);
+    padding: 5rem 1rem;
+    padding-top: 7rem;
+    text-align: center;
+}
+
+.home__avatar {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 3px solid var(--coloer-accent-variant);
+
+}
+
+.home__title {
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.home__title--strong {
+    color: black;
+}
+
+.home__description {
+    font-size: 1.3rem;
+
+}
+
+.home__contact {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 2rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.home__contact:hover {
+    background-color: transparent;
+    color: var(--color-text);
+    outline: 2px solid var(--coloer-accent-variant);
+}
