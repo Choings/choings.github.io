@@ -1,6 +1,6 @@
 /* Global */
 
-:root{
+:root {
 
     /* App Colors */
     --color-primary: var(--color-black);
@@ -33,7 +33,11 @@ body {
     margin: 0;
 }
 
-h1,h2,h3,p,ul {
+h1,
+h2,
+h3,
+p,
+ul {
     margin: 0;
 }
 
@@ -57,32 +61,10 @@ button:focus {
     outline: 1px solid var(--color-accent);
 }
 
-/* Common */
-
-.section {
-    padding: 4rem;
-    text-align: center;
-
-}
-
-.max-containe {
-    max-width: 1200px;
-    margin: auto;
-}
-.title {
-    font-size: 2.5rem;
-    margin: 1rem 0;
-}
-
-.description {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
-}
-
 /* Header */
 
-.header{
-    background-color: gray;
+.header {
+    background-color: #050a13;
     position: fixed;
     top: 0;
     width: 100%;
@@ -96,18 +78,15 @@ button:focus {
     display: flex;
     align-items: center;
     gap: 8px;
-
 }
 
 .header__logo__img {
     width: 36px;
     height: 36px;
-
 }
 
 .header__logo__title {
     font-size: 1.8rem;
-
 }
 
 .header__menu {
@@ -120,222 +99,10 @@ button:focus {
 }
 
 .header__menu__item:hover {
-    border-bottom: 1px solid var(--coloer-accent-variant);
+    border-bottom: 1px solid var(--color-accent);
 }
 
 .header__menu__item.active {
-    border: 1px solid var(--coloer-accent-variant);
+    border: 1px solid var(--color-accent);
     border-radius: 4px;
-}
-
-/* Home */
-
-#home{
-
-    background-color: gray;
-    color: var(--color-text);
-    padding: 5rem 1rem;
-    padding-top: 7rem;
-    text-align: center;
-}
-
-.home__avatar {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 100%;
-    border: 3px solid var(--coloer-accent-variant);
-
-}
-
-.home__title {
-    font-size: 3rem;
-    margin: 1rem;
-}
-
-.home__title--strong {
-    color: black;
-}
-
-
-
-.home__contact {
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 0.5rem 1rem;
-    margin: 2rem;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-.home__contact:hover {
-    background-color: transparent;
-    color: var(--color-text);
-    outline: 2px solid var(--coloer-accent-variant);
-}
-
-/* About */
-
-.majors {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 2.5rem 0;
-    white-space: nowrap;
-
-}
-
-.major {
-    background-color: gray;
-    padding: 2rem 1rem;
-    color: var(--color-text);
-    border-radius: 1rem;
-    cursor: default;
-    box-shadow: 5px 5px rgba(192, 90, 6, 0.4), 10px 10px rgba(192, 90, 6, 0.4), 15px 15px rgba(192, 90, 6, 0.4), 20px 20px rgba(0, 98, 90, 0.1), 25px 25px rgba(0, 98, 90, 0.05);
-}
-
-.major__icon {
-    font-size: 4rem;
-    margin: 1rem 0;
-    color: var(--coloer-accent-variant);
-    transition: all 300ms ease;
-}
-
-.major__title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.major:hover .major__icon {
-    transform: rotate(-15deg) scale(1.2);
-}
-
-.jobs {
-    text-align: start;
-}
-
-.job__img {
-    width: 150px;
-}
-
-.job {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 100px;
-    
-}
-
-.job__name {
-    color: var(--color-primary);
-}
-
-.job__period {
-    color: var(--color-primary);
-    font-size: 0.8rem;
-}
-
-
-/* Work */
-
-#work {
-    background-color: darkgray;
-    color: var(--color-text);
-}
-
-.categories {
-    display: flex;
-    justify-content: center;
-    margin: 2.5rem;
-    gap : 1rem;
-}
-
-.category {
-    position: relative;
-    color: var(--color-text);
-    font-size: 1.1rem;
-    padding: 0.5rem 3rem;
-    border-radius: 4px;
-    border: 1px solid var(--coloer-accent-variant);
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.category--selected {
-    background-color: var(--color-accent);
-    color: var(--color-primary);
-}
-
-.category__count {
-    opacity: 0;
-    position: absolute;
-    top: -20px;
-    right: 16px;
-    width: 28px;
-    height: 28px;
-    line-height: 28px;
-    border-radius: 100%;
-    background-color: var(--coloer-accent-variant);
-    color: var(--color-text);
-    transition: all 250ms ease-in;
-}
-
-.category--selected .category__count, .category:hover .category__count {
-
-    opacity: 1;
-    top : 0;
-
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-}
-
-.project {
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.project__img {
-    width: 100%;
-}
-
-.project__metadata {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 250ms ease-in;
-    transform: translateY(-10px);
-}
-
-
-.project__metadata:hover {
-    opacity: 0.8;
-    transform: translate(0px);
-}
-
-.project__title:after {
-    content: '';
-    display: block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0.5rem 0;
-    width: 50px;
-    height: 2px;
-    background-color: var(--color-accent);
 }
