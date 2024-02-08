@@ -176,7 +176,7 @@ button:focus {
     outline: 2px solid var(--color-accent);
 }
 
-/* About */
+/* About & Skills */
 
 .majors {
     display: flex;
@@ -213,6 +213,7 @@ button:focus {
 
 .jobs {
     text-align: start;
+    margin-top: 50px;
 }
 
 .job {
