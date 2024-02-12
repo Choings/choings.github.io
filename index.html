@@ -1,213 +1,265 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO -->
     <title>Choing&#39;s Portfolio</title>
     <meta name="description" content="Portfolio for software engineer choing" />
     <meta name="author" content="Ellie" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    
+
     <!-- OG (Open Graph Data) -->
     <meta property="og:title" content="choing의 포트폴리오" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="배포후 생성된 URL" />
     <meta property="og:image" content="배포후에 생성된 이미지 URL" />
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/9eb162ac0d.js" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    
+
     <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header class="header">
-        <div class="header__logo">
-            <img class="header__logo__img" src="images/profile-modified.png" alt="logo" />
-            <h1 class="header__logo__title"><a href="#">Choing</a></h1>
-        </div>
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li><a class="header__menu__item active" href="#home">Home</a></li>
-                <li><a class="header__menu__item" href="#about">About</a></li>
-                <li><a class="header__menu__item" href="#skills">Skills</a></li>
-                <li><a class="header__menu__item" href="#Projects">Projects</a></li>
-                <li><a class="header__menu__item" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="header__toggle" aria-label="navigation menu toggle">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+      <div class="header__logo">
+        <img
+          class="header__logo__img"
+          src="images/profile-modified.png"
+          alt="logo"
+        />
+        <h1 class="header__logo__title"><a href="#">Choing</a></h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a class="header__menu__item" href="#skills">Skills</a></li>
+          <li><a class="header__menu__item" href="#Projects">Projects</a></li>
+          <li><a class="header__menu__item" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
     <!-- Main -->
     <main>
-        <!-- Home -->
-        <section id="home">
-           <div class="home__container">
-            <img class="home__avatar" src="images/profile-modified.png" alt="Choing's profile" />
-            <h2 class="home__title">안녕하세요<br> <strong class="home__title--strong">Front-end Developer</strong> 최인석 입니다.</h2>
-            <p class="home__description">간략한 자기소개</p>
-            <a class="home__contact" href="#contact">Contact Me</a>
-           </div>
-        </section>
+      <!-- Home -->
+      <section id="home">
+        <div class="home__container">
+          <img
+            class="home__avatar"
+            src="images/profile-modified.png"
+            alt="Choing's profile"
+          />
+          <h2 class="home__title">
+            안녕하세요<br />
+            <strong class="home__title--strong">Front-end Developer</strong>
+            최인석 입니다.
+          </h2>
+          <p class="home__description">간략한 자기소개</p>
+          <a class="home__contact" href="#contact">Contact Me</a>
+        </div>
+      </section>
 
-        <!-- About -->
-        <section id="about" class="section max-container">
-            <h2 class="title">About me & Career</h2>
-            <p class="description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
-                repudiandae nemo nihil, similique quis hic! Numquam eligendi
-                cupiditate temporibus in qui sed, hic debitis minus, eum laborum
-                veritatis deserunt rem.
-            </p>
-            <ul class="jobs">
-                <li class="job">
-                    <img class="job__image" src="images/steclogo.png" alt="google logo" />
-                    <div>
-                        <p class="job__name">대학병원 보안요원 근무</p>
-                        <p class="job__period">2016.01 ~ 2023.02</p>
-                    </div>
-                </li>
-                <li class="job">
-                    <img class="job__image" src="images/kostalogo.png" alt="samsung logo" />
-                    <div>
-                        <p class="job__name">Java 기반 DevOps 개발자 양성과정</p>
-                        <p class="job__period">2023.05 ~ 2023.10</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="section">
-            <h2 class="skill__title">My Skills</h2>
-            <p class="skill__description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
-                doloremque sint deleniti vel quod itaque molestias, suscipit dolor
-                cupiditate saepe rem minima, amet ipsum accusantium architecto
-                laboriosam dolore id necessitatibus?
-            </p>
-            <ul class="majors">
-                <li class="major">
-                    <i class="fa-solid fa-language major__icon"></i>
-                    <p class="major__title">Programing Languages</p>
-                    <p>Java, HTML, CSS, JavaScript, TypeScript</p>
-                </li>
-                <li class="major">
-                    <i class="fa-solid fa-book major__icon"></i>
-                    <p class="major__title">Framework/ Library</p>
-                    <p>JSP, Servlet, jQuery,Spring Boot, Spring MVC</p>
-                </li>
-                <li class="major">
-                    <i class="fa-solid fa-server major__icon"></i>
-                    <p class="major__title">Server / Datebase</p>
-                    <p>Oracle, Tomcat 8.5, MyBatis</p>
-                </li>
-                <li class="major">
-                    <i class="fa-solid fa-toolbox major__icon"></i>
-                    <p class="major__title">Tools</p>
-                    <p>Eclipse, Visual Studio Code</p>
-                </li>
-            </ul>
-        </section>
+      <!-- About -->
+      <section id="about" class="section max-container">
+        <h2 class="title">About me & Career</h2>
+        <p class="description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+          repudiandae nemo nihil, similique quis hic! Numquam eligendi
+          cupiditate temporibus in qui sed, hic debitis minus, eum laborum
+          veritatis deserunt rem.
+        </p>
+        <ul class="jobs">
+          <li class="job">
+            <img
+              class="job__image"
+              src="images/steclogo.png"
+              alt="google logo"
+            />
+            <div>
+              <p class="job__name">대학병원 보안요원 근무</p>
+              <p class="job__period">2016.01 ~ 2023.02</p>
             </div>
-        </section>
-
-        <!-- Projects -->
-        <section id="Projects" class="section">
-            <div class="max-container">
-                <h2 class="title">Projects</h2>
-                <ul class="categories">
-                    <li>
-                        <button class="category category--selected">All <span class="category__count">3</span></button>
-                    </li>
-                    <li>
-                        <button class="category">Front-end <span class="category__count">1</span></button>
-                    </li>
-                    <li>
-                        <button class="category">Back-end <span class="category__count">1</span></button>
-                    </li>
-                </ul>
-                <ul class="projects">
-                    <li class="project">
-                        <a href="#" target="_blank">
-                            <img src="images/portfolio project.png" alt="project2" class="project__img" />
-                            <div class="project__metadata">
-                                <h3 class="project__title">Project #1</h3>
-                                <p>HTML,CSS,JavaScript를 사용하여 만든 포트폴리오 사이트 입니다.</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="https://bald-neem-14f.notion.site/CampBoss-5d3d1f8272ef4c0b9c9bd0d2918c32ac?pvs=4" target="_blank">
-                            <img src="images/project1.png" alt="project1" class="project__img"/>
-                            <div class="project__metadata">
-                                <h3 class="project__title">Project #2</h3>
-                                <p>CampBoss Project</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="project">
-                        <a href="#" target="_blank">
-                            <img src="images/campboss.png" alt="project2" class="project__img"/>
-                            <div class="project__metadata">
-                                <h3 class="project__title">Project #3</h3>
-                                <p>Clone Coding with HTML, CSS</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+          </li>
+          <li class="job">
+            <img
+              class="job__image"
+              src="images/kostalogo.png"
+              alt="samsung logo"
+            />
+            <div>
+              <p class="job__name">Java 기반 DevOps 개발자 양성과정</p>
+              <p class="job__period">2023.05 ~ 2023.10</p>
             </div>
-        </section>
+          </li>
+        </ul>
+      </section>
 
-     
-        <!-- Arrow up -->
-        <aside>
-            <a class="arrow-up" href="#home" title="back to top">
-                <i class="fa-solid fa-arrow-up"></i>
-            </a>
-        </aside>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <h2 class="skill__title">My Skills</h2>
+        <p class="skill__description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
+          doloremque sint deleniti vel quod itaque molestias, suscipit dolor
+          cupiditate saepe rem minima, amet ipsum accusantium architecto
+          laboriosam dolore id necessitatibus?
+        </p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-solid fa-language major__icon"></i>
+            <p class="major__title">Programing Languages</p>
+            <p>Java, HTML, CSS, JavaScript, TypeScript</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-book major__icon"></i>
+            <p class="major__title">Framework/ Library</p>
+            <p>JSP, Servlet, jQuery,Spring Boot, Spring MVC</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-server major__icon"></i>
+            <p class="major__title">Server / Datebase</p>
+            <p>Oracle, Tomcat 8.5, MyBatis</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-toolbox major__icon"></i>
+            <p class="major__title">Tools</p>
+            <p>Eclipse, Visual Studio Code</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Projects -->
+      <section id="Projects" class="section">
+        <div class="max-container">
+          <h2 class="title">Projects</h2>
+          <ul class="categories">
+            <li>
+              <button class="category category--selected" data-category="all">
+                All <span class="category__count">3</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="Front-end">
+                Front-end <span class="category__count">1</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="Back-end">
+                Back-end <span class="category__count">2</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li class="project" data-type="Front-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/portfolio project.png"
+                  alt="project1"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>HTML, CSS, JS를 이용한 포트폴리오 페이지</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="Back-end">
+              <a
+                href="https://bald-neem-14f.notion.site/CampBoss-5d3d1f8272ef4c0b9c9bd0d2918c32ac?pvs=4"
+                target="_blank"
+              >
+                <img
+                  src="images/project1.png"
+                  alt="project1"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #2</h3>
+                  <p>CampBoss Project</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="Back-end">
+              <a href="#" target="_blank">
+                <img
+                  src="images/campboss.png"
+                  alt="project2"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #3</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Arrow up -->
+      <aside>
+        <a class="arrow-up" href="#home" title="back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </aside>
     </main>
     <!-- Footer -->
     <footer id="contact" class="section">
-        <div class="max-container">
-            <h2 class="title">Let&#39;s talk</h2>
-            <p class="description">
-                <i class="fa-regular fa-envelope"></i> : seokeee92@naver.com
-            </p>
-            <p class="description">
-                <i class="fa-solid fa-phone"></i> : 010 3407 3605
-            </p>
-            <ul class="contact__links">
-                <li>
-                    <a class="contact__link" href="https://github.com/choings" target="_blank" title="my github link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="contact__link" href="https://github.com/dream-ellie" target="_blank" title="my notion link">
-                        <i class="fa-solid fa-n"></i>
-                    </a>
-                </li>
-            </ul>
-            <p>ⓒFront-end Developer Choing - All rights reserved</p>
-        </div>
+      <div class="max-container">
+        <h2 class="title">Let&#39;s talk</h2>
+        <p class="description">
+          <i class="fa-regular fa-envelope"></i> : seokeee92@naver.com
+        </p>
+        <p class="description">
+          <i class="fa-solid fa-phone"></i> : 010 3407 3605
+        </p>
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/choings"
+              target="_blank"
+              title="my github link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/dream-ellie"
+              target="_blank"
+              title="my notion link"
+            >
+              <i class="fa-solid fa-n"></i>
+            </a>
+          </li>
+        </ul>
+        <p>ⓒFront-end Developer Choing - All rights reserved</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
