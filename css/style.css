@@ -83,7 +83,8 @@ button:focus {
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: var(--color-accent);
   margin: 1rem 0;
 }
 
@@ -274,9 +275,13 @@ button:focus {
 }
 
 .major__title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+.major__subtitle {
+  font-size: 1.3rem;
 }
 
 .major:hover .major__icon {
@@ -284,9 +289,9 @@ button:focus {
 }
 
 .skill__title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 1rem 0;
-  color: var(--color-text);
+  color: var(--color-accent);
 }
 
 .skill__description {
@@ -308,12 +313,13 @@ button:focus {
 }
 
 .job__name {
+  font-size: 1.2rem;
   color: var(--color-primary);
 }
 
 .job__period {
   color: var(--color-primary);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .job__image {

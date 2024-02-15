@@ -1,4 +1,4 @@
-const sectionIds = ['#home', '#about', '#skills', '#projects', '#contact'];
+const sectionIds = ['#home', '#career', '#skills', '#projects', '#contact'];
 const sections = sectionIds.map((id) => document.querySelector(id));
 const navItems = sectionIds.map((id) =>
   document.querySelector(`[href="${id}"]`)
